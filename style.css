@@ -1,0 +1,205 @@
+@font-face {
+    font-family: inter-light;
+    src: url(font-text/Inter-LightBETA.woff);
+}
+
+@font-face {
+    font-family: inter-semibold;
+    src: url(font-text/Inter-SemiBold.woff);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #303030;
+}
+
+
+#superior {
+    padding: 206px 0 0 62px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+#superior h1 {
+    color: white;
+    font-family: inter-semibold;
+    font-size: 60px;
+    position: relative;
+    letter-spacing: -2.5%;
+    line-height: 72px;
+    bottom: 8px;
+}
+
+#h3-white {
+    color: white;
+    font-family: inter-light;
+    font-size: 20px;
+    line-height: 55px;
+    
+}
+
+#dados {
+    background-color: #F9F9F9;
+    width: 1440px;
+    height: 200px;
+    margin-top: 169px;
+    width: 2000px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center; 
+    align-items: center; 
+}
+
+#dados-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+
+#dados h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size:40px;
+    margin: 0px;
+}
+
+#dados p {
+    font-family: inter-light;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+#historia {
+    background-color: white;
+    width: 900;
+    height: 800px;
+    top: 1003px;
+    padding-left: 77px;
+    padding-top: 5px;
+}
+
+#historia p {
+    font-family: inter-light;
+    font-size: 24px;
+}
+
+#historia h2 {
+    font-family: inter-semibold;
+    padding-top: 210px;
+    font-size: 45px;
+    padding-bottom: 0px;
+}
+
+#historia img {
+   width: 610;
+   position: relative;
+   top: -400px;
+   left: 1100px;
+   border-radius: 30px;
+
+}
+
+#formulario {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    width: 1440;
+    height: 638px;
+    top: 1478px;
+
+}
+
+#formulario h1 {
+    font-family: inter-semibold;
+    color: white;
+    font-size: 32px;
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+
+input {
+    width: 410px;
+    height: 55px;
+    left: 466px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding-left: 25px;
+    margin-bottom: 40px;
+}
+
+
+
+
+#formulario button {
+    background-color: #C07212;
+    font-family: inter-semibold;
+    border-radius: 8px;
+    color: white;
+    border: 0px;
+    height: auto;
+    width: 190px;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 767px) {
+    #superior {
+        padding: 100px 20px 0 !important;
+    }
+    
+    #superior h1 {
+        font-size: 32px !important;
+        line-height: 1.3 !important;
+        left: 0 !important;
+        text-align: center;
+    }
+    
+    #h3-white {
+        left: 0 !important;
+        text-align: center;
+        line-height: 1.5 !important;
+    }
+    
+    #dados {
+        width: 100% !important;
+        grid-template-columns: 1fr !important;
+        padding: 30px 20px !important;
+    }
+    
+    #historia {
+        width: 100% !important;
+        padding: 50px 20px !important;
+    }
+    
+    #historia img {
+        width: 100% !important;
+        max-width: 500px !important;
+        position: static !important;
+        margin-top: 30px;
+        left: 0 !important;
+    }
+    
+    #formulario {
+        width: 100% !important;
+        padding: 50px 20px !important;
+    }
+    
+    input {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
